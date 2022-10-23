@@ -1,0 +1,68 @@
+// Container
+.container {
+    max-width: ($containerWidth + $containerPadding) + px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 $containerSidePadding + px;
+
+    @media (max-width: $breakpoint992) {
+        max-width: 970px;
+    }
+
+    @media (max-width: $breakpoint768) {
+        max-width: 740px;
+    }
+
+    @media (max-width: $breakpoint480) {
+        max-width: none;
+    }
+}
+
+// Body Locked
+body {
+    font-family: "Metropolis";
+    &.locked {
+        overflow: hidden;
+    }
+}
+
+// Animations
+// Fade
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+.btn {
+    padding: 11px 24px;
+    background: $neutral;
+    border-radius: 4px;
+    display: inline-flex;
+    gap: 7px;
+    transition: 0.3s all ease;
+    color: #fff;
+    &:hover {
+        background: $neutralDark;
+        cursor: pointer;
+        svg {
+            transition: 0.3s all ease;
+
+            transform: translate(5px, -5px);
+        }
+    }
+}
+.btn__outline {
+    font-weight: 400;
+    padding: 11px 24px;
+    font-size: 14px;
+    line-height: 14px;
+    display: inline-flex;
+    color: #2962ef;
+    &:hover {
+        color: $neutralDark;
+    }
+}
