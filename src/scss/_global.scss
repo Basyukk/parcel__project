@@ -66,3 +66,33 @@ body {
         color: $neutralDark;
     }
 }
+.section {
+    // .section__title
+
+    &__title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+
+        color: #232427;
+        @media (max-width: $breakpoint992) {
+            font-size: 32px;
+            line-height: 120%;
+        }
+        @media (max-width: $breakpoint480) {
+            font-size: 26px;
+        }
+    }
+
+    // .section__subtitle
+
+    &__subtitle {
+        margin-top: 15px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        /* or 171% */
+
+        color: #9998a4;
+    }
+}

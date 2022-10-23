@@ -1,0 +1,102 @@
+.section {
+    // .section__special
+
+    &__special {
+        padding: 110px 0;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 20px;
+        row-gap: 50px;
+        @media (max-width: $breakpoint1200) {
+            padding: 75px 0;
+        }
+    }
+}
+
+.special {
+    // .special__item
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 50px;
+    @media (max-width: $breakpoint1200) {
+        gap: 20px;
+    }
+    &__item {
+        background: #ffffff;
+        border: 1px solid #efeff4;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        flex: 0 1 346px;
+        padding: 60px 40px;
+        @media (max-width: $breakpoint1200) {
+            flex: 0 1 48%;
+            padding: 40px;
+        }
+        @media (max-width: $breakpoint768) {
+            flex: 0 1 100%;
+            padding: 25px;
+        }
+        @media (max-width: $breakpoint480) {
+            padding: 15px;
+        }
+        &:first-child {
+            border: none;
+            padding: 0;
+            justify-content: center;
+            padding-right: 60px;
+        }
+        &:not(:first-child):hover {
+            background: #fafbfd;
+            border: none;
+            transition: 0.3s all ease;
+            .special__item-img {
+                background: #ffffff;
+                box-shadow: 0px 6px 15px rgba(35, 36, 39, 0.05);
+            }
+        }
+    }
+
+    // .special__item-img
+
+    &__item-img {
+        width: 77px;
+        height: 77px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #fafbfd;
+        border-radius: 100%;
+    }
+
+    // .special__item-title
+
+    &__item-title {
+        margin-top: 40px;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 18px;
+        /* identical to box height */
+
+        color: #232427;
+        @media (max-width: $breakpoint768) {
+            margin-top: 25px;
+        }
+        @media (max-width: $breakpoint480) {
+            font-size: 20px;
+        }
+    }
+
+    // .special__item-text
+
+    &__item-text {
+        margin-top: 16px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        /* or 171% */
+
+        color: #9998a4;
+    }
+}
