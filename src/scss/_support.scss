@@ -1,0 +1,107 @@
+.section {
+    // .section__support
+
+    &__support {
+        padding: 140px 0;
+        @media (max-width: $breakpoint1200) {
+            padding: 100px 0;
+        }
+        @media (max-width: $breakpoint992) {
+            padding: 60px 0;
+        }
+    }
+}
+
+.support {
+    // .support__item
+    display: flex;
+    justify-content: space-between;
+
+    &__item {
+        flex: 0 1 255px;
+        display: flex;
+        flex-direction: column;
+        background: #fafbfd;
+        border-radius: 4px;
+        padding: 20px;
+    }
+
+    // .support__item-img
+
+    &__item-img {
+        img {
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    // .support__item-links
+
+    &__item-links {
+        margin-top: 10px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    &__name {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 16px;
+        margin-top: 15px;
+
+        color: #232427;
+    }
+}
+.first {
+    // .first__support
+
+    &__support {
+        margin-top: 45px;
+
+        .support__item {
+            &:nth-child(even) {
+                background: #ffffff;
+                box-shadow: 0px 4px 144px rgba(0, 0, 0, 0.04);
+                border-radius: 4px;
+                filter: drop-shadow(0px 4px 24px rgba(0, 0, 0, 0.05));
+            }
+            @media (max-width: $breakpoint768) {
+                flex: 0 1 100%;
+            }
+        }
+        @media (max-width: $breakpoint768) {
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+    }
+}
+.item {
+    // .item__link
+
+    &__link {
+    }
+}
+.second {
+    // .second__support
+
+    &__support {
+        margin-top: 30px;
+        .support__item {
+            &:nth-child(odd) {
+                background: #ffffff;
+                box-shadow: 0px 4px 144px rgba(0, 0, 0, 0.04);
+                border-radius: 4px;
+                filter: drop-shadow(0px 4px 24px rgba(0, 0, 0, 0.05));
+            }
+            @media (max-width: $breakpoint768) {
+                flex: 0 1 100%;
+            }
+        }
+        @media (max-width: $breakpoint768) {
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+    }
+}

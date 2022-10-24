@@ -1,4 +1,147 @@
 // Footer
 footer {
     display: block;
+    background: #232427;
+}
+
+.footer {
+    // .footer__item
+
+    padding: 97px 0 80px 0;
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: $breakpoint768) {
+        flex-direction: column;
+        row-gap: 30px;
+        align-items: center;
+    }
+
+    &__item {
+        max-width: 350px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    // .footer__logo
+
+    &__logo {
+    }
+
+    // .footer__text
+
+    &__text {
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        /* or 171% */
+
+        color: #ffffff;
+    }
+
+    // .footer__copy
+
+    &__copy {
+        max-width: 168px;
+        margin-top: auto;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;
+        /* identical to box height */
+
+        color: #d6d5df;
+    }
+
+    // .footer__title
+
+    &__title {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 16px;
+        /* identical to box height */
+
+        color: #ffffff;
+    }
+
+    // .footer__input
+
+    &__input {
+        padding: 20px 60px 20px 20px;
+        background: #ffffff;
+        border-radius: 4px;
+        outline: none;
+        width: 100%;
+        &:focus {
+            outline: 1px solid $neutral;
+        }
+    }
+
+    // .footer__btn
+
+    &__btn {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        right: 8px;
+        top: 8px;
+        bottom: 0;
+        background: $neutral;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        &:hover {
+            background: $neutralDark;
+            transition: 0.3s all ease;
+        }
+    }
+
+    // .footer__social
+
+    &__social {
+        margin-top: 32px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    // .footer__social-item
+
+    &__social-item {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #5e5c6c;
+    }
+
+    // .footer__link
+
+    &__link {
+        display: flex;
+    }
+}
+.form {
+    // .form__label
+
+    &__label {
+        background: #ffffff;
+        border-radius: 4px;
+        margin-top: 12px;
+        position: relative;
+        display: flex;
+    }
+
+    // .form__text
+
+    &__text {
+        margin-top: 10px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        /* or 171% */
+
+        color: #ffffff;
+    }
 }
